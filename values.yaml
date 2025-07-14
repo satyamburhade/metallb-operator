@@ -14,9 +14,7 @@ helper-operator:
         approval: manual
         channel: stable
         operatorName: metallb-operator
-        csv: metallb-operator.v4.16.0-202502260004
-        source: redhat-operators
-        sourceNamespace: openshift-marketplace
+        csv: metallb-operator.v4.18.0-202506251003
             
 helper-status-checker:
   enabled: true
