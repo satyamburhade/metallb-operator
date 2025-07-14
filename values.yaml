@@ -11,10 +11,12 @@ helper-operator:
         create: true
         notownnamespace: true
       subscription:
-        approval: Manual
+        approval: manual
         channel: stable
         operatorName: metallb-operator
         csv: metallb-operator.v4.16.0-202502260004
+        source: redhat-operators
+        sourceNamespace: openshift-marketplace
             
 helper-status-checker:
   enabled: true
