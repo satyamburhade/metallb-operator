@@ -6,7 +6,7 @@ helper-operator:
       syncwave: 1
       namespace:
         create: true
-        name: metallb
+        name: metallb-system
       operatorgroup:
         create: true
         notownnamespace: true
