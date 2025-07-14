@@ -24,7 +24,7 @@ helper-status-checker:
     timeout: 60
     synchook: PreSync
     namespace:
-      name: metallb
+      name: metallb-system
     serviceAccount:
       create: true
       name: status-checker
