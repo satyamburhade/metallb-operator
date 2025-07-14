@@ -3,7 +3,7 @@ kind: IPAddressPool
 metadata:
   name: default
   annotations:
-  "helm.sh/hook": post-install
+    "helm.sh/hook": post-install
   #"helm.sh/hook-weight": "1"
   #"helm.sh/hook-delete-policy": before-hook-creation
 spec:
