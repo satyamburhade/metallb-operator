@@ -29,5 +29,5 @@ helper-status-checker:
       create: true
       name: status-checker
 
-#ipaddresspool:
- # ip_range: ""
+ipaddresspool:
+  ip_range: ""
