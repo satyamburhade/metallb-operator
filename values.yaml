@@ -1,0 +1,33 @@
+
+helper-operator:
+  operators:
+    metallb-operator:
+      enabled: true
+      syncwave: -1
+      namespace:
+        create: true
+        name: metallb
+      operatorgroup:
+        create: true
+        notownnamespace: true
+      subscription:
+        approval: Manual
+        channel: stable
+        operatorName: metallb-operator
+        csv: metallb-operator.v4.16.0-202502260004
+            
+helper-status-checker:
+  enabled: true
+  approver: false
+  checks:
+  - operatorName: metallb-operator
+    timeout: 60
+    syncwave: -1
+    namespace:
+      name: metallb
+    serviceAccount:
+      create: true
+      name: status-checker
+
+ipaddresspool:
+  ip_range: ""

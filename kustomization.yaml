@@ -1,0 +1,19 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+
+helmCharts:
+- name: helper-operator
+  releaseName: helper-operator
+  includeCRDs: true
+  version: 1.0.26
+  repo: https://redhat-cop.github.io/helm-charts
+  valuesFile: values.yaml
+- name: helper-status-checker
+  releaseName: helper-status-checker
+  includeCRDs: true
+  version: 4.0.9
+  repo: https://redhat-cop.github.io/helm-charts
+  valuesFile: values.yaml
