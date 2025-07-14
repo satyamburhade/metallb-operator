@@ -3,6 +3,7 @@ kind: IPAddressPool
 metadata:
   name: default
   annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
     argocd.argoproj.io/hook: PostSync
   #"helm.sh/hook-weight": "1"
   #"helm.sh/hook-delete-policy": before-hook-creation
