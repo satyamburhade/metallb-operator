@@ -4,7 +4,7 @@ metadata:
   name: metallb
   namespace: metallb-system
   annotations:
-    "helm.sh/hook": post-install
+    argocd.argoproj.io/hook: PostSync
     #"helm.sh/hook-weight": "1"
     #"helm.sh/hook-delete-policy": before-hook-creation
 spec: {}
