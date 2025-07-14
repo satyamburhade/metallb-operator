@@ -4,7 +4,7 @@ metadata:
   name: l2-advertisement
   namespace: metallb
   annotations:
-    "helm.sh/hook": post-install
+    argocd.argoproj.io/hook: PostSync
 spec:
   nodeSelectors:
     - matchLabels:
