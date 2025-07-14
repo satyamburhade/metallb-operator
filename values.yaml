@@ -3,7 +3,7 @@ helper-operator:
   operators:
     metallb-operator:
       enabled: true
-      syncwave: 1
+      synchook: PreSync
       namespace:
         create: true
         name: metallb-system
@@ -22,7 +22,7 @@ helper-status-checker:
   checks:
   - operatorName: metallb-operator
     timeout: 60
-    syncwave: 1
+    synchook: PreSync
     namespace:
       name: metallb
     serviceAccount:
